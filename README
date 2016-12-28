@@ -1,3 +1,28 @@
 This cpp program reads, stores, computes, and sorts the overall grades of
 students by utilizting data structures of both vector and list.
 
+The Code::Block Management Tree looks like this:
+
+Header Files:
+
+grade.h – declare the functions as defined in grade.cpp
+
+median.h – declare the functions as defined in median.cpp
+
+Student_info.h – declare the functions as defined in Student_info.cpp, plus defining the data structure of the Student_info (object) type.
+
+extract_fails.h - declare the fgrade function in extrac_fails.cpp.
+
+Sources:
+
+main.cpp – this is the first program that is run during the implementation phase.
+
+grade.cpp – contains all functions relating to computing grades.
+
+median.cpp – contains all functions relating to computing median.
+
+Student_info.cpp – contains all functions relating to handling a Student_info object.
+
+extract_fails.cpp - declare the def of fgrade (i.e. predicate of a failed grade) function and most importantly
+4 versions of extract_fail functions by utilizing vector containerin version 1,2,3 and list container in version 4
+to separate the failed graded student record into another container.
