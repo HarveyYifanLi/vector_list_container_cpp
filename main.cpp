@@ -115,7 +115,7 @@ int main()
     students_failed.sort(compare);
     
     // check if all-failed or all-passed has appeared or else, then display final reports accordingly
-     if(students_failed.size() == 0){
+     if(students_failed.empty()){
      
      cout << "Congrats! No student failed !!!" << endl;
      cout << "These students have passed." << endl;
@@ -125,7 +125,7 @@ int main()
      cout << i->name << " " << grade(*i) << endl; // i-> is equivalent to (*i).name
      
      
-     } else if (students.size()==0){
+     } else if (students.empty()){
      
          cout << "No student passed !!! :( "<< endl;
          cout << "These students have failed." << endl;
