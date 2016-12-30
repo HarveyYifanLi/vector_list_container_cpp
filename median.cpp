@@ -17,11 +17,13 @@ using std::vector;
 // compute the median of a vector<double>
 double median(vector<double> vec)
 {
+    
+    if (vec.empty())
+        throw domain_error("median of an empty vector");
+    
     typedef vector<double>::size_type vec_sz;
     
     vec_sz size = vec.size();
-    if (size == 0)
-        throw domain_error("median of an empty vector");
     
     sort(vec.begin(),vec.end());
     
